@@ -1,0 +1,109 @@
+:root {
+  --bg: #f7f7f7;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --accent: #3b82f6;
+  --border: #e5e7eb;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: linear-gradient(180deg, #eef2ff 0%, #f7f7f7 100%);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 24px 80px;
+}
+
+header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  letter-spacing: -0.04em;
+}
+
+header p {
+  margin: 14px auto 0;
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.note-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 32px;
+}
+
+.note-card h2,
+.note-card h3 {
+  margin-top: 28px;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.note-card h2 {
+  font-size: 1.8rem;
+}
+
+.note-card h3 {
+  font-size: 1.3rem;
+}
+
+.note-card p {
+  margin: 0 0 18px;
+  color: var(--text);
+}
+
+.note-card ul,
+.note-card ol {
+  margin: 0 0 18px 1.4rem;
+  color: var(--text);
+}
+
+.note-card li {
+  margin-bottom: 10px;
+}
+
+.note-card blockquote {
+  margin: 0 0 18px;
+  padding: 16px 20px;
+  background: #f4f6fb;
+  border-left: 4px solid var(--accent);
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 24px 16px 48px;
+  }
+
+  .note-card {
+    padding: 24px;
+  }
+}
