@@ -2,7 +2,7 @@
 
 Catatan ini digunakan untuk menampung pembelajaran HTML
 
-**Apa aja isi materi nya ?**
+**Apa aja isi materi nya ?** <br>
 Berikut untuk isi materi nya :
 - basic tag HTML
 - (next.....)
